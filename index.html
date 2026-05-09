@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>District Season Calculation</title>
+    <meta
+      name="description"
+      content="Hitung skor District Season (Hospital & Field)"
+    />
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Wp8Id3x.png" />
+    <link rel="apple-touch-icon" href="https://i.imgur.com/Wp8Id3x.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <script>
+      (function () {
+        try {
+          var stored = window.localStorage.getItem('theme');
+          var mode = stored === 'light' || stored === 'dark' ? stored : 'light';
+          var root = document.documentElement;
+          root.classList.remove('light', 'dark');
+          root.classList.add(mode);
+          root.setAttribute('data-theme', mode);
+          root.style.colorScheme = mode;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body
+    class="font-sans antialiased [overflow-wrap:anywhere] selection:bg-[rgba(211,47,47,0.18)]"
+  >
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
